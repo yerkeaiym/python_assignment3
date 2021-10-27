@@ -1,0 +1,22 @@
+In this Assignment we work in this task 
+Database should store login, password and token issued to user during the authentication
+As a database you can use any SQL database( postgresql, mysql, sqlite)
+Database should have at least one Table with name User, and columns: id, login, password, token
+User Table should contain at least 3 records
+Web server should provide at least 2 routes
+/login
+Use as a baseline a code which was provided in a Week 6, Moodle
+After successful login( if login and password matches with a record in User Table), as response route should return html text: token: <token value> and store that token in the User Table
+If provided login and password does not exist in the User Table, as a response route should return html text: Could not found a user with login: <login>
+/protected
+This route should receive as a parameter token value
+Token value needs to be passed over URL, 
+e.g. http://127.0.01:5000/protected?token=24230ifdsjfjdsklfj43943ut943
+This route should return html text: <h1>Hello, token which is provided is correct </h1>, if as a parameter RIGHT token value is passed
+This route should return html text: <h1>Hello, Could not verify the token </h1>, if as a parameter WRONG token value is passed
+Also, for that we use pyjwt (https://pyjwt.readthedocs.io/en/stable/)
+flask (https://flask.palletsprojects.com/en/2.0.x/)
+flask_sqlalchemy (https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+this kind of libraries. 
+
+This assignment done by SE-2012 Yerkeaiym Zholdykaraeva, SE-2011 Zhanna Bekzhanova, SE-2013 Nazym Kopbayeva.
