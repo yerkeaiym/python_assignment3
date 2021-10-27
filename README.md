@@ -1,4 +1,4 @@
-# Pyton_Assignment3
+# Python_Assignment3
 ## Title:
 Assignment_3 login to web server
 ## Installation
